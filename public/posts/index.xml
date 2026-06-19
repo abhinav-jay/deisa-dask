@@ -1,0 +1,36 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title> – Posts</title>
+    <link>//localhost:1313/posts/</link>
+    <description>Recent content in Posts on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 19 Jun 2026 14:29:19 +0200</lastBuildDate>
+    
+	  <atom:link href="//localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>My First Post</title>
+      <link>//localhost:1313/posts/my-first-post/</link>
+      <pubDate>Fri, 19 Jun 2026 14:29:19 +0200</pubDate>
+      
+      <guid>//localhost:1313/posts/my-first-post/</guid>
+      <description>
+        
+        
+        &lt;h1&gt;test&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;content 1&lt;/li&gt;
+&lt;li&gt;now it is not draft anymore&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>
