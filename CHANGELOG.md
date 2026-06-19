@@ -20,6 +20,7 @@ Types of changes:
 ### Added 
 
 - codemeta.json
+- add documentation website that automatically updates with ```pydoc-markdown```
 
 ## [0.5.0]
 
