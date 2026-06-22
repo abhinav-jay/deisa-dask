@@ -33,7 +33,7 @@ Handshake Objects class Handshake() " /><link rel="canonical" href="//localhost:
 	<meta itemprop="description" content="dask
 dask.handshake
 Handshake Objects class Handshake()">
-	<meta itemprop="wordCount" content="1290">
+	<meta itemprop="wordCount" content="1282">
 	<meta name="twitter:card" content="summary">
 	<meta name="twitter:description" content="dask
 dask.handshake
@@ -204,7 +204,7 @@ Handshake Objects class Handshake()">
               <li class=""><div class="hextra-sidebar-item hx:group hx:relative hx:flex hx:items-center" data-active="false">
     <a
       class="hx:flex hx:items-center hx:justify-between hx:gap-2 hx:grow hx:cursor-pointer hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:hextra-focus-visible-inset hx:ltr:pr-8 hx:rtl:pl-8 hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:contrast-more:border hx:contrast-more:border-transparent hx:contrast-more:text-gray-900 hx:contrast-more:hover:border-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:dark:text-gray-50 hx:contrast-more:dark:hover:border-gray-50"
-      href="/blog/"
+      href=""
       
     >
       <span class="hx:min-w-0 [word-break:break-word]">Blog</span>
@@ -755,14 +755,15 @@ various metadata structures.</p>
 <p>This function acts as a decorator that allows you to register a callback with
 parameters provided through <code>callback_args</code>. It also handles exceptions using the
 <code>exception_handler</code> and defines the execution rules with <code>when</code> parameter.</p>
-<p>Supports:
-Default window size is 1.
-@deisa.register(&ldquo;arr1&rdquo;)                             # default window size
-@deisa.register(&ldquo;arr1&rdquo;, &ldquo;arr2&rdquo;)                     # two arrays, default window size
-@deisa.register(Window(&ldquo;arr1&rdquo;))                     # default window size
-@deisa.register(Window(&ldquo;arr1&rdquo;, 2))                  # window size 2
-@deisa.register(Window(&ldquo;arr1&rdquo;, 2), Window(&ldquo;arr2&rdquo;, 5))   # window size 2 for arr1 and 5 for arr2
-@deisa.register(Window(&ldquo;arr1&rdquo;, 2), Window(&ldquo;arr2&rdquo;, 5), &ldquo;arr3&rdquo;) # window size 2 for arr1 and 5 for arr2, default window size for arr3</p>
+<p>
+Supports:<br>
+Default window size is 1.<br>
+<code>@deisa.register(&quot;arr1&quot;)</code>                             # default window size<br>
+<code>@deisa.register(&quot;arr1&quot;, &quot;arr2&quot;)</code>                     # two arrays, default window size<br>
+<code>@deisa.register(Window(&quot;arr1&quot;))</code>                     # default window size<br>
+<code>@deisa.register(Window(&quot;arr1&quot;, 2))</code>                  # window size 2<br>
+<code>@deisa.register(Window(&quot;arr1&quot;, 2), Window(&quot;arr2&quot;, 5))</code>   # window size 2 for arr1 and 5 for arr2<br>
+<code>@deisa.register(Window(&quot;arr1&quot;, 2), Window(&quot;arr2&quot;, 5), &quot;arr3&quot;)</code> # window size 2 for arr1 and 5 for arr2, default window size for arr3</p>
 <p><strong>Arguments</strong>:</p>
 <ul>
 <li><code>callback_args</code>: Variable-length arguments representing callback-specific parameters.</li>
@@ -797,14 +798,14 @@ Defaults to &lsquo;AND&rsquo;.</li>
 <p>This function allows you to register a callback with parameters provided through
 <code>callback_args</code>. It also handles exceptions using the <code>exception_handler</code>
 and defines the execution rules with <code>when</code> parameter.</p>
-<p>Supports:
-Default window size is 1.
-@deisa.register(&ldquo;arr1&rdquo;)                             # default window size
-@deisa.register(&ldquo;arr1&rdquo;, &ldquo;arr2&rdquo;)                     # two arrays, default window size
-@deisa.register(Window(&ldquo;arr1&rdquo;))                     # default window size
-@deisa.register(Window(&ldquo;arr1&rdquo;, 2))                  # window size 2
-@deisa.register(Window(&ldquo;arr1&rdquo;, 2), Window(&ldquo;arr2&rdquo;, 5))   # window size 2 for arr1 and 5 for arr2
-@deisa.register(Window(&ldquo;arr1&rdquo;, 2), Window(&ldquo;arr2&rdquo;, 5), &ldquo;arr3&rdquo;) # window size 2 for arr1 and 5 for arr2, default window size for arr3</p>
+<p>Supports:<br>
+Default window size is 1.<br>
+<code>@deisa.register(&quot;arr1&quot;)</code>                              # default window size<br>
+<code>@deisa.register(&quot;arr1&quot;,&quot;arr2&quot;)</code>                      # two arrays, default window size<br>
+<code>@deisa.register(Window(&quot;arr1&quot;))</code>                      # default window size<br>
+<code>@deisa.register(Window(&quot;arr1&quot;,2))</code>                   # window size 2<br>
+<code>@deisa.register(Window(&quot;arr1&quot;,2),Window(&quot;arr2&quot;,5))</code>    # window size 2 for arr1 and 5 for arr2<br>
+<code>@deisa.register(Window(&quot;arr1&quot;,2),Window(&quot;arr2&quot;,5),&quot;arr3&quot;)</code>  # window size 2 for arr1 and 5 for arr2, default window size for arr3</p>
 <p><strong>Arguments</strong>:</p>
 <ul>
 <li><code>callback</code>: Callback function to register.</li>

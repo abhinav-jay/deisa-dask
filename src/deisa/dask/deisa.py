@@ -113,14 +113,15 @@ class Deisa(IDeisa):
         parameters provided through ``callback_args``. It also handles exceptions using the
         ``exception_handler`` and defines the execution rules with ``when`` parameter.
 
-        Supports:
-        Default window size is 1.
-        @deisa.register("arr1")                             # default window size
-        @deisa.register("arr1", "arr2")                     # two arrays, default window size
-        @deisa.register(Window("arr1"))                     # default window size
-        @deisa.register(Window("arr1", 2))                  # window size 2
-        @deisa.register(Window("arr1", 2), Window("arr2", 5))   # window size 2 for arr1 and 5 for arr2
-        @deisa.register(Window("arr1", 2), Window("arr2", 5), "arr3") # window size 2 for arr1 and 5 for arr2, default window size for arr3
+        \b
+        Supports:  
+        Default window size is 1.  
+        `@deisa.register("arr1")`                             # default window size  
+        `@deisa.register("arr1", "arr2")`                     # two arrays, default window size  
+        `@deisa.register(Window("arr1"))`                     # default window size  
+        `@deisa.register(Window("arr1", 2))`                  # window size 2  
+        `@deisa.register(Window("arr1", 2), Window("arr2", 5))`   # window size 2 for arr1 and 5 for arr2  
+        `@deisa.register(Window("arr1", 2), Window("arr2", 5), "arr3")` # window size 2 for arr1 and 5 for arr2, default window size for arr3  
 
         :param callback_args: Variable-length arguments representing callback-specific parameters.
         :param exception_handler: Optional exception handler to manage errors during callback execution.
@@ -141,21 +142,20 @@ class Deisa(IDeisa):
     def register_callback(self, callback: IDeisa.Callback, *callback_args: CallbackArgs,
                           exception_handler: IDeisa.ExceptionHandler = __default_exception_handler,
                           when: Literal['AND', 'OR'] = 'AND') -> Callable:
-        """
-        Registers a callback function with specific arguments, exception handling, and conditional execution criteria.
+        """ Registers a callback function with specific arguments, exception handling, and conditional execution criteria.
 
         This function allows you to register a callback with parameters provided through
         ``callback_args``. It also handles exceptions using the ``exception_handler``
         and defines the execution rules with ``when`` parameter.
 
-        Supports:
-        Default window size is 1.
-        @deisa.register("arr1")                             # default window size
-        @deisa.register("arr1", "arr2")                     # two arrays, default window size
-        @deisa.register(Window("arr1"))                     # default window size
-        @deisa.register(Window("arr1", 2))                  # window size 2
-        @deisa.register(Window("arr1", 2), Window("arr2", 5))   # window size 2 for arr1 and 5 for arr2
-        @deisa.register(Window("arr1", 2), Window("arr2", 5), "arr3") # window size 2 for arr1 and 5 for arr2, default window size for arr3
+        Supports:  
+        Default window size is 1.  
+        `@deisa.register("arr1")`                              # default window size  
+        `@deisa.register("arr1","arr2")`                      # two arrays, default window size  
+        `@deisa.register(Window("arr1"))`                      # default window size  
+        `@deisa.register(Window("arr1",2))`                   # window size 2  
+        `@deisa.register(Window("arr1",2),Window("arr2",5))`    # window size 2 for arr1 and 5 for arr2  
+        `@deisa.register(Window("arr1",2),Window("arr2",5),"arr3")`  # window size 2 for arr1 and 5 for arr2, default window size for arr3  
 
         :param callback: Callback function to register.
         :param callback_args: Variable-length arguments representing callback-specific parameters.
